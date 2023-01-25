@@ -27,7 +27,7 @@ public class SendGridEmail {
     Content content = new Content("text/plain", "Thank you! You have been successfully registered to Homeless Helpers.");
     Mail mail = new Mail(from, subject, to, content);
 
-    SendGrid sg = new SendGrid("SG.F2bOAoc4RBKXVChcll8U3g.u3xqyJJbVIMBqKpOgM8paUugUOXgxbXCUlXVsyUtOZU");
+    SendGrid sg = new SendGrid("API_KEY");
     Request request = new Request();
     try {
       request.setMethod(Method.POST);
